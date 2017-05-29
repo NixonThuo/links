@@ -7,8 +7,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in!
+                <div class="content">
+                @foreach ($links as $link)
+                <table class="table-bordered" >
+                    <tr><ul>{{ $link->title }}</ul></tr>
+                    <tr><ul>{{ $link->description }}</ul></tr>
+                </table>
+                 @endforeach
                 </div>
             </div>
         </div>

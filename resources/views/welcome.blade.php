@@ -76,11 +76,8 @@
                     @endif
                 </div>
             @endif
-
             <div class="content">
-                @foreach ($links as $link)
-                  <li>{{ $link->title }}</li>
-                @endforeach
+                <h1>Links To Major Sites</h1>
             </div>
         </div>
     </body>
